@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Register now
+		</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<div class="header" style="align:center;">
+			<img src="SSBCLogo.jpg">
+		</div>
+		<!-- Site navigation menu -->
+		<div id = "sidebar">
+			<div id="logo">
+				<img src="logo.png" width=200 height=160>
+			</div>
+			
+			<ul>
+				<li><a href="index.html">Home page</a></li>
+				<li><a href="aboutdataset.html">About dataset</a></li>
+				<li><a href="getdataset.html">Get dataset</a></li>
+				<li><a href="signup.html">Registration</a></li>
+				<li><a href="schedule.html">Schedule</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="results.html">Results</a></li>
+				<li><a href="contactus.html">Contact us</a></li>
+			</ul>
+		</div>
+			
+			<form name="myform" action="upload.php" method="POST" enctype="multitype/form-data">
+				<h1 style="color:black;">
+					<u>Register now</u>
+				</h1>
+				<fieldset>
+					<label class="" style="color:black;" for="name"><b>Name:</b></label>
+					<input type="text" class="input-box" name="name" required="" placeholder="Your name">
+					<label class="" style="color:black;" for="affiliation"><b>Affiliation:</b></label>
+					<input type="text" class="input-box" name="aff" required="" placeholder="Your affiliation">
+					<label class="" style="color:black;" for="email"><b>E-mail address:</b></label>
+					<input type="email" class="input-box" name="email" required="" placeholder="Your email address">
+					<label class="" style="color:black;" for="country"><b>Country:</b></label>
+					<input type="text" class="input-box" name="country" required="" placeholder="Your country">
+					<label for="phone" style="color:black;"><b>Phone no.:</b></label>
+					<input type="text" class="input-box" name="phone" required="" placeholder="Your phone number">
+					<label class="" style="color:black;" for="upload"><b>Select file to upload:</b></label><br/>
+					<input type="file" name="fileToUpload" name="upload" id="fileToUpload" style="color:black;">
+					<input type="submit" value="Upload File" name="submit">
+					<input type="checkbox" name="checkbox" required=""><a href="termsconditions.html" style="color:black;"><u>I have read the terms and conditions, and I agree with them</u></a><br/>
+				</fieldset>
+				<script src="myjavascript.js"></script>
+				<button type ="button" class="" onclick="return validateForm()">Register</button>
+			</form>
+		</div>
+		<div class="footer">
+			<p>&copy NABNEET BHATTACHARJEE</p>
+		 </div>
+	</body>
+</html>
